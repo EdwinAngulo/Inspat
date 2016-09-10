@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <script language="JavaScript">
+           function calcular()
+    {
+   
+
+
+ var f = parseFloat( document.getElementById("frecuencia").value);
+ var i = parseFloat( document.getElementById("intensidad").value);
+ var e= parseFloat( document.getElementById("extencion").value);
+ var p = parseFloat( document.getElementById("persistencia").value);
+ var s= parseFloat( document.getElementById("sensibilidad").value);
+
+ var signi;
+ var priori;
+
+ var im= document.getElementById("im").innerHTML= f*(i+e+p+s);
+
+  if (im>=1 && im<=12)
+  {
+    document.getElementById('signi').innerHTML="Bajo";
+    document.getElementById('priori').innerHTML="Terciaria";
+    document.getElementById('priori').style.backgroundColor="#01DF01";
+    
+  }
+  if (im>=12 && im<=24)
+  {
+    document.getElementById('signi').innerHTML="Medio";
+    document.getElementById('priori').innerHTML="Secundaria";
+    document.getElementById('priori').style.backgroundColor="#F4FA58";
+   
+  }
+  if (im>=24 && im<=36)
+  {
+    document.getElementById('signi').innerHTML="Alto";
+    document.getElementById('priori').innerHTML="Primaria";
+    document.getElementById('priori').style.backgroundColor="#FE2E2E";
+  }
+
+
+
+    }   
+
+
+        </script>
+
+    <title>.:RAI-10:.</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- jVectorMap -->
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md" onload="calcular();">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-envira"></i> <span>INSPAT</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido</span>
+                <h2>Juan Duque</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br/>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+             <div class="menu_section">
+                <h3>TGA</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Inicio </span></a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Nuevoreporte.html">Nuevo Reporte</a></li>
+                      <li><a href="historico_reportes.html">Historico de Reporte</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-newspaper-o"></i>Programas Ambientales<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                     <li><a href="Crearprograma.html">Crear Programa</a></li>
+                     <li><a href="programas_activos.html">Ver Programas Activos</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-industry"></i> Gestion de Empresa <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="crearempresa.html">Registrar Empresa</a></li>
+                      <li><a>RAI<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            
+                            </li>
+                            <li><a href="anexo1.html">Anexo 1</a>
+                            </li>
+                            <li><a href="anexo2.html">Anexo 2</a>
+                            </li>
+                            <li><a href="anexo3.html">Anexo 3</a>
+                            </li>
+                            <li><a href="anexo4.html">Anexo 4</a>
+                            </li>
+                            <li><a href="anexo5.html">Anexo 5</a>
+                            </li>
+                            <li><a href="anexo6.html">Anexo 6</a>
+                            </li>
+                            <li><a href="anexo7.html">Anexo 7</a>
+                            </li>
+                            <li><a href="anexo8.html">Anexo 8</a>
+                            </li>
+                            <li><a href="anexo9.html">Anexo 9</a>
+                            </li>
+                            <li><a href="anexo10.html">Anexo 10</a>
+                            </li>
+                            <li><a href="anexo11.html">Anexo 11</a>
+                            </li>
+                            <li><a href="anexo12.html">Anexo 12</a>
+                            </li>
+                            <li><a href="anexo13.html">Anexo 13</a>
+                            </li>
+                          </ul>
+                        </li>
+                     
+                    </ul>
+                  </li>
+                  <li><a href="normativa.html"><i class="fa fa-file-text"></i>Normativa Vigente </span></a>
+                  <li><a href="contactoadmin.html"><i class="fa fa-envelope"></i> Contactar al Administrador </span></a>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+             
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip">
+                <span class="glyphicon "></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true" onclick="launchFullScreen(document.documentElement);"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top">
+                <span class="glyphicon" ></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+        
+
+          <div class="row">
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+              
+                 <h2>Matriz De Aspectos E Impactos</h2>
+              <div class="container">
+                 <div class="ln_solid"></div>
+              
+
+                <table class="table table-reflow">
+                <thead>
+                  <tr class="warning">
+                    <th>NOMBRE DE LA EMPRESA:<input type="text" id="nombre" value="">
+                    <th>FECHA: <input type="date" id="fecha" value=""></th>
+                  </tr>
+                </thead>
+                <table class="table table-reflow">
+                <thead>
+                  <tr class="success">
+                    <th>ACTIVIDAD#:<input type="text" id="actividad" value="">
+                     <th>PROCESO#: <input type="text" id="proceso" value=""></th>
+                  </tr>
+                </thead>
+                
+                        <!--edsda-->
+                    <div id="centro" class="container-fluid">
+                     <div class="table-responsive">
+                      <table class="table table-reflow table-bordered table-condensed"" id="matriz1" >
+                        <tr class="info">
+                              <th>ASPECTO AMBIENTAL</th>
+                              <th>IMPACTO AMBIENTAL</th>
+                              <th>FACTOR DE IMPACTO</th>
+                              <th>REAL/POTENCIAL</th>
+                              <th>CARACTERO O NATURAL</th>
+                              <th>FRECUENCIA</th>
+                              <th>INTENSIDAD</th>
+                              <th>EXTENCION</th>
+                              <th>PERSISTENCIA</th>
+                              <th>SENSIBILIDAD</th>
+                              <th>IMPORTANCIA</th>
+                              <th>SIGNIFICADO DEL ASPECTO</th>
+                              <th>PRIORIDAD</th>
+                          
+                        </tr>
+                        <tr>
+                          <th></th>
+
+                           <th><input type="text" size="20" class="impacto" placeholder="Buscar Impacto"></th>
+                          
+                          <th><select name="factor">
+                                    <option>Fisico</option>
+                                    <option>Socio Economico</option>
+                                   
+                                    </select>
+                              </th>
+                              <th><select name="real">
+                                    <option>Real</option>
+                                    <option>Potencial</option>
+                                    
+                                    </select>
+                              </th>
+                              <th><select name="caracter">
+                                    <option>-</option>
+                                    <option>+</option>
+                                    
+                                    </select>
+                              </th>
+                              <th><select name="frecuencia" id="frecuencia" onchange="calcular();">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                              </th>
+                              <th><select name="intensidad" id="intensidad" onchange="calcular();">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                              </th>
+                              <th><select name="extencion" id="extencion" onchange="calcular();">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                              </th>
+                              <th><select name="persistencia" id="persistencia" onchange="calcular();">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                              </th>
+                              <th><select name="sensibilidad" id="sensibilidad" onchange="calcular();">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    </select>
+                              </th>
+
+                              
+                              <th id=im></th>
+                              
+                              <th id=signi></th>
+
+                              <th id=priori style=""></th>
+                        </tr>
+
+
+
+
+                    
+                         </div>
+                       </table>
+                    </div>
+                    
+                    </div>
+
+
+                    <div class="container col-md-offset-5">
+                        <button type="button" class="btn btn-primary">Guardar cambios</button>
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+
+              </div>
+
+                <!-- End to do list -->
+                
+                <!-- start of weather widget -->
+                
+                <!-- end of weather widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            INSPAT - Inspeccion Ambiental para Tecnologos <a href="https://www.sena.com">ADSI 902923</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/bernii/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="js/flot/jquery.flot.orderBars.js"></script>
+    <script src="js/flot/date.js"></script>
+    <script src="js/flot/jquery.flot.spline.js"></script>
+    <script src="js/flot/curvedLines.js"></script>
+    <!-- jVectorMap -->
+    <script src="js/maps/jquery-jvectormap-2.0.3.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <script language="javascript">
+// buscamos el metodo para los tipos de navegadores
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+</script>
+  </body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="images/favicon.ico" />
+
+    <title>.:CREAR PROGRAMA:.</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- jVectorMap -->
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-envira"></i> <span>INSPAT</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido</span>
+                <h2>Juan Duque</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br/>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+             <div class="menu_section">
+                <h3>TGA</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Inicio </span></a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Nuevoreporte.html">Nuevo Reporte</a></li>
+                      <li><a href="historico_reportes.html">Historico de Reporte</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-newspaper-o"></i>Programas Ambientales<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                     <li><a href="Crearprograma.html">Crear Programa</a></li>
+                     <li><a href="programas_activos.html">Ver Programas Activos</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-industry"></i> Gestion de Empresa <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="crearempresa.html">Registrar Empresa</a></li>
+                      <li><a>RAI<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            
+                            </li>
+                            <li><a href="anexo1.html">Anexo 1</a>
+                            </li>
+                            <li><a href="anexo2.html">Anexo 2</a>
+                            </li>
+                            <li><a href="anexo3.html">Anexo 3</a>
+                            </li>
+                            <li><a href="anexo4.html">Anexo 4</a>
+                            </li>
+                            <li><a href="anexo5.html">Anexo 5</a>
+                            </li>
+                            <li><a href="anexo6.html">Anexo 6</a>
+                            </li>
+                            <li><a href="anexo7.html">Anexo 7</a>
+                            </li>
+                            <li><a href="anexo8.html">Anexo 8</a>
+                            </li>
+                            <li><a href="anexo9.html">Anexo 9</a>
+                            </li>
+                            <li><a href="anexo10.html">Anexo 10</a>
+                            </li>
+                            <li><a href="anexo11.html">Anexo 11</a>
+                            </li>
+                            <li><a href="anexo12.html">Anexo 12</a>
+                            </li>
+                            <li><a href="anexo13.html">Anexo 13</a>
+                            </li>
+                          </ul>
+                        </li>
+                     
+                    </ul>
+                  </li>
+                  <li><a href="normativa.html"><i class="fa fa-file-text"></i>Normativa Vigente </span></a>
+                  <li><a href="contactoadmin.html"><i class="fa fa-envelope"></i> Contactar al Administrador </span></a>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+             
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip">
+                <span class="glyphicon "></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true" onclick="launchFullScreen(document.documentElement);"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top">
+                <span class="glyphicon" ></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+         <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Crear Programa Ambiental</h2>
+                  
+                  <div class="clearfix"></div>
+                </div>
+                  <h2 class="text-center"><b>INTRODUCCION DEL PROGRAMA</b></h2>
+                <div class="x_content">
+                  <div id="alerts"></div>
+                  <div class="btn-toolbar editor" data-role="editor-toolbar" data-target="#editor">
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font"><i class="fa fa-font"></i><b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                      </ul>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Font Size"><i class="fa fa-text-height"></i>&nbsp;<b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a data-edit="fontSize 5">
+                            <p style="font-size:17px">Grande</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a data-edit="fontSize 3">
+                            <p style="font-size:14px">Normal</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a data-edit="fontSize 1">
+                            <p style="font-size:11px">Pequeña</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="bold" title="Bold (Ctrl/Cmd+B)"><i class="fa fa-bold"></i></a>
+                      <a class="btn" data-edit="italic" title="Italic (Ctrl/Cmd+I)"><i class="fa fa-italic"></i></a>
+                      <a class="btn" data-edit="strikethrough" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>
+                      <a class="btn" data-edit="underline" title="Underline (Ctrl/Cmd+U)"><i class="fa fa-underline"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="insertunorderedlist" title="Bullet list"><i class="fa fa-list-ul"></i></a>
+                      <a class="btn" data-edit="insertorderedlist" title="Number list"><i class="fa fa-list-ol"></i></a>
+                      <a class="btn" data-edit="outdent" title="Reduce indent (Shift+Tab)"><i class="fa fa-dedent"></i></a>
+                      <a class="btn" data-edit="indent" title="Indent (Tab)"><i class="fa fa-indent"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="justifyleft" title="Align Left (Ctrl/Cmd+L)"><i class="fa fa-align-left"></i></a>
+                      <a class="btn" data-edit="justifycenter" title="Center (Ctrl/Cmd+E)"><i class="fa fa-align-center"></i></a>
+                      <a class="btn" data-edit="justifyright" title="Align Right (Ctrl/Cmd+R)"><i class="fa fa-align-right"></i></a>
+                      <a class="btn" data-edit="justifyfull" title="Justify (Ctrl/Cmd+J)"><i class="fa fa-align-justify"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn dropdown-toggle" data-toggle="dropdown" title="Hyperlink"><i class="fa fa-link"></i></a>
+                      <div class="dropdown-menu input-append">
+                        <input class="span2" placeholder="URL" type="text" data-edit="createLink" />
+                        <button class="btn" type="button">Add</button>
+                      </div>
+                      <a class="btn" data-edit="unlink" title="Remove Hyperlink"><i class="fa fa-cut"></i></a>
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" title="Insert picture (or just drag & drop)" id="pictureBtn"><i class="fa fa-picture-o"></i></a>
+                      <input type="file" data-role="magic-overlay" data-target="#pictureBtn" data-edit="insertImage" />
+                    </div>
+
+                    <div class="btn-group">
+                      <a class="btn" data-edit="undo" title="Undo (Ctrl/Cmd+Z)"><i class="fa fa-undo"></i></a>
+                      <a class="btn" data-edit="redo" title="Redo (Ctrl/Cmd+Y)"><i class="fa fa-repeat"></i></a>
+                    </div>
+                  </div>
+
+                  <div id="editor" class="editor-wrapper"></div>
+
+                  <textarea name="descr" id="descr" style="display:none;"></textarea>
+                  
+                  <div class="ln_solid"></div>
+                      <h2 class="col-md-6 col-sm-6 col-xs-12 col-md-offset-5"><b>FICHA DEL PROGRAMA</b></small></h2>
+                   
+                    <div class="clearfix"></div>
+
+                  </div>
+                  <div class="x_content">
+                    <br />
+                    <form class="form-horizontal form-label-left input_mask">
+
+                      <div class="form-group">
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Nombre de la Empresa</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <input type="text" class="form-contr" size="24">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                      
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Objetivo</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                           <textarea rows="4"></textarea>
+
+                        </div>
+
+                      <div class="form-group">
+                        &nbsp
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Meta</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <textarea rows="4"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Indicador</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <input type="text" class="form-contr" size="18">
+                        </div>
+                      </div>
+                      <div class="form-group">   
+                        <div align="center">
+                          Fecha Inicio <input type="date" class="form-contr" size="16">
+                          Fecha Fin <input type="date" class="form-contr" size="16">
+                        </div>
+                        
+                      </div>
+                      <div class="ln_solid"></div>
+                     <div class="x_content">
+
+                   
+                      <div class="form-group">
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Nombre del Programa</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <input type="text" class="form-contr" size="40">
+                        </div>
+                      </div>
+                    <table class="table table-reflow table-bordered table-condensed" id="tabla">
+
+                      <tr class="info">
+                            <th>N°</th>
+                            <th>ACCION</th>
+                            <th>RESPONSABLE</th>
+                            <th>RECURSOS</th>
+                            <th>FECHA DE CUMPLIMIENTO</th>              
+                        </tr>
+
+                        <tbody>
+                            <tr>
+                                <td id="numero"><input id="numero" type="text" name="numero" size="2"></td>
+                                <td id="accion"><input type="text" name="accion"></td>
+                                <td id="resonsable"><input type="text" name="resonsable"></td>
+                                <td id="recursos"><input type="number" name="recursos"></td>
+                                <td id="fechacumplimiento"><input type="date" name="fechacumplimiento"></td>
+                                <td class="eliminar"><button type="button" class="btn btn-danger">Eliminar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <input  id="agregar" class="btn btn-primary" type="button" value="Insertar Fila" style="width: 120px" />
+                    <div class="form-group">
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Responsable del programa</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <input type="text" class="form-contr" size="20">
+                        </div>
+                      </div>
+                       <div class="form-group">
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Fecha de Revision y Aprobacion</label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <input type="date" class="form-contr" size="16">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-md-6 col-sm-3 col-xs-12">Aprobado Por </label>
+                        <div class="col-md-6 col-sm-9 col-xs-12">
+                          <input type="text" class="form-contr" size="20">
+                        </div>
+                      </div>
+                     
+
+                  </div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-5">
+                          <button type="submit" class="btn btn-success">Guardar</button>
+                          <button type="submit" class="btn btn-danger">Cancelar</button>
+                        </div>
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+
+
+
+                <!-- End to do list -->
+                
+                <!-- start of weather widget -->
+                
+                <!-- end of weather widget -->
+              </div>
+            </div>
+          </div>
+          </div>
+        
+        <!-- /page content -->
+  
+                 
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            INSPAT - Inspeccion Ambiental para Tecnologos <a href="https://www.sena.com">ADSI 902923</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/bernii/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- bootstrap-wysiwyg -->
+    <script src="../vendors/bootstrap-wysiwyg/js/bootstrap-wysiwyg.min.js"></script>
+    <script src="../vendors/jquery.hotkeys/jquery.hotkeys.js"></script>
+    <script src="../vendors/google-code-prettify/src/prettify.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="js/flot/jquery.flot.orderBars.js"></script>
+    <script src="js/flot/date.js"></script>
+    <script src="js/flot/jquery.flot.spline.js"></script>
+    <script src="js/flot/curvedLines.js"></script>
+    <!-- jVectorMap -->
+    <script src="js/maps/jquery-jvectormap-2.0.3.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+    <!-- Flot -->
+    
+    <!-- /Flot -->
+<script>
+$(function(){
+  // Clona la fila oculta que tiene los campos base, y la agrega al final de la tabla
+  $("#agregar").on('click', function(){
+
+    //$("#tabla tbody tr:eq(0)").clone().removeClass('tabla').appendTo("#tabla tbody");
+    
+      
+    $('#tabla tr:last').after('<tr><td id="numero"><input id="numero" type="text" name="numero" size="2"></td><td id="accion"><input type="text" name="accion"></td><td id="resonsable"><input type="text" name="resonsable"></td><td id="recursos"><input type="number" name="recursos"></td><td id="fechacumplimiento"><input type="date" name="fechacumplimiento"></td><td class="eliminar"><button type="button" class="btn btn-danger">Eliminar</button></td></tr>');
+        
+      });
+ 
+  // Evento que selecciona la fila y la elimina 
+  $(document).on("click",".eliminar",function(){
+    var parent = $(this).parents().get(0);
+    $(parent).remove();
+  });
+});
+ 
+</script>
+   
+    <script>
+      var opts = {
+          lines: 12,
+          angle: 0,
+          lineWidth: 0.4,
+          pointer: {
+              length: 0.75,
+              strokeWidth: 0.042,
+              color: '#1D212A'
+          },
+          limitMax: 'false',
+          colorStart: '#1ABC9C',
+          colorStop: '#1ABC9C',
+          strokeColor: '#F0F3F3',
+          generateGradient: true
+      };
+      var target = document.getElementById('foo'),
+          gauge = new Gauge(target).setOptions(opts);
+
+      gauge.maxValue = 6000;
+      gauge.animationSpeed = 32;
+      gauge.set(3200);
+      gauge.setTextField(document.getElementById("gauge-text"));
+    </script>
+    <!-- /gauge.js -->
+     <!-- bootstrap-wysiwyg -->
+    <script>
+      $(document).ready(function() {
+        function initToolbarBootstrapBindings() {
+          var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier',
+              'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
+              'Times New Roman', 'Verdana'
+            ],
+            fontTarget = $('[title=Font]').siblings('.dropdown-menu');
+          $.each(fonts, function(idx, fontName) {
+            fontTarget.append($('<li><a data-edit="fontName ' + fontName + '" style="font-family:\'' + fontName + '\'">' + fontName + '</a></li>'));
+          });
+          $('a[title]').tooltip({
+            container: 'body'
+          });
+          $('.dropdown-menu input').click(function() {
+              return false;
+            })
+            .change(function() {
+              $(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');
+            })
+            .keydown('esc', function() {
+              this.value = '';
+              $(this).change();
+            });
+
+          $('[data-role=magic-overlay]').each(function() {
+            var overlay = $(this),
+              target = $(overlay.data('target'));
+            overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
+          });
+
+          if ("onwebkitspeechchange" in document.createElement("input")) {
+            var editorOffset = $('#editor').offset();
+
+            $('.voiceBtn').css('position', 'absolute').offset({
+              top: editorOffset.top,
+              left: editorOffset.left + $('#editor').innerWidth() - 35
+            });
+          } else {
+            $('.voiceBtn').hide();
+          }
+        }
+
+        function showErrorAlert(reason, detail) {
+          var msg = '';
+          if (reason === 'unsupported-file-type') {
+            msg = "Unsupported format " + detail;
+          } else {
+            console.log("error uploading file", reason, detail);
+          }
+          $('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>' +
+            '<strong>File upload error</strong> ' + msg + ' </div>').prependTo('#alerts');
+        }
+
+        initToolbarBootstrapBindings();
+
+        $('#editor').wysiwyg({
+          fileUploadError: showErrorAlert
+        });
+
+        window.prettyPrint;
+        prettyPrint();
+      });
+    </script>
+
+     
+    <!-- /bootstrap-wysiwyg -->
+    <script language="javascript">
+// buscamos el metodo para los tipos de navegadores
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+</script>
+  </body>
+</html>   

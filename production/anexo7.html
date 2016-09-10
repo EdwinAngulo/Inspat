@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+
+    <title>.:RAI-A7:.</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- jVectorMap -->
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-envira"></i> <span>INSPAT</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido</span>
+                <h2>Juan Duque</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br/>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+             <div class="menu_section">
+                <h3>TGA</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Inicio </span></a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Nuevoreporte.html">Nuevo Reporte</a></li>
+                      <li><a href="historico_reportes.html">Historico de Reporte</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-newspaper-o"></i>Programas Ambientales<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                     <li><a href="Crearprograma.html">Crear Programa</a></li>
+                     <li><a href="programas_activos.html">Ver Programas Activos</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-industry"></i> Gestion de Empresa <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="crearempresa.html">Registrar Empresa</a></li>
+                      <li><a>RAI<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            
+                            </li>
+                            <li><a href="anexo1.html">Anexo 1</a>
+                            </li>
+                            <li><a href="anexo2.html">Anexo 2</a>
+                            </li>
+                            <li><a href="anexo3.html">Anexo 3</a>
+                            </li>
+                            <li><a href="anexo4.html">Anexo 4</a>
+                            </li>
+                            <li><a href="anexo5.html">Anexo 5</a>
+                            </li>
+                            <li><a href="anexo6.html">Anexo 6</a>
+                            </li>
+                            <li><a href="anexo7.html">Anexo 7</a>
+                            </li>
+                            <li><a href="anexo8.html">Anexo 8</a>
+                            </li>
+                            <li><a href="anexo9.html">Anexo 9</a>
+                            </li>
+                            <li><a href="anexo10.html">Anexo 10</a>
+                            </li>
+                            <li><a href="anexo11.html">Anexo 11</a>
+                            </li>
+                            <li><a href="anexo12.html">Anexo 12</a>
+                            </li>
+                            <li><a href="anexo13.html">Anexo 13</a>
+                            </li>
+                          </ul>
+                        </li>
+                     
+                    </ul>
+                  </li>
+                  <li><a href="normativa.html"><i class="fa fa-file-text"></i>Normativa Vigente </span></a>
+                  <li><a href="contactoadmin.html"><i class="fa fa-envelope"></i> Contactar al Administrador </span></a>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+             
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip">
+                <span class="glyphicon "></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true" onclick="launchFullScreen(document.documentElement);"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top">
+                <span class="glyphicon" ></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+        
+
+          <div class="row">
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+                    <div class="container">
+
+                       <center>
+                         <table class="table table-reflow table-bordered table-condensed">
+                         
+                           <thead>
+                              <tr>
+                                <td bgcolor="#3CB4F1" colspan="8"><h3>LISTA DE CHEQUEO PARA LA SUPERVISIÓN DE LA GESTIÓN DE LOS RESIDUOS</h3></td>
+                              </tr>
+
+                                  <tr>
+                                  <td class="warning">N° INSPECCIÓN:</td>
+                                  <td class="warning"> <input id="inspeccion" type="text" name="inspeccion"></td>
+                                  <td class="warning">FECHA:</td>
+                                  <td class="warning"> <input id="fecha" type="date" name="fecha"></td>
+                              <td class="warning">HORA:</td>
+                              <td class="warning" colspan="8"> <input id="hora" type="text" name="hora"></td>
+                              </tr>
+
+                              <tr>
+                                  <td class="warning">UNIDAD:</td>
+                                  <td class="warning"> <input id="unidad"  type="text" name="unidad"></td>
+                                  <td class="warning">INSTALACIÓN:</td>
+                                  <td class="warning"> <input id="instalcion" type="text" name="instalacion"></td>
+                              <td class="warning">AREAS:</td>
+                              <td class="warning"colspan="8"> <input id="areas" type="text" name="areas"></td>
+                              </tr>
+
+                           </thead>
+
+                           
+                         
+                                 
+
+                         
+                          <thead>
+                    <tr>
+                        <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                      <td class="info"  colspan="4"><strong>SITUACION</strong></td>
+                    </tr>
+                    <tr class="success">
+                            <td id="si"><strong>SI</strong></td>
+                            <td id="no"><strong>NO</strong></td>
+                            <td id="pa"><strong>PA</strong></td>
+                            <td id="na"><strong>NA</strong></td>
+                    </tr>
+                              
+                            
+                         </thead>
+                           <tbody>
+
+                         <tr>
+                                <td class="info" colspan="8"><strong><h4>1.IDENTIFICACIÓN CLASIFICACIÓN E INVENTARIO</h4></strong></td>
+
+                              </tr>
+
+                           <tr>
+
+                               <td>1.1</td>
+                               <td colspan="3">Están identificados y clasificados los residuos según los anexos el convenio de 
+          Basilea <br> y la clasificación adoptada en la entidad  y dicha información se encuentra actualizada</td>
+                               <td> <input id="si" type="radio" name="1.1" size="1"></td>
+                               <td> <input id="no" type="radio" name="1.1" size="1"></td>
+                               <td> <input id="pa" type="radio" name="1.1" size="1"></td>
+                               <td> <input id="na" type="radio" name="1.1" size="1"></td>
+                           </tr>
+                          
+                          <tr>
+
+                               <td>1.2</td>
+                               <td colspan="3">Mensualmente se termina el volumen generado de cada uno de los residuos <br>
+                       Identificados y dicha información se registra</td>
+                               <td> <input id="si" type="radio" name="1.2" size="1" ></td>
+                               <td> <input id="no" type="radio" name="1.2" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="1.2" size="1" ></td>
+                               <td> <input id="na" type="radio" name="1.2" size="1" ></td>
+                           </tr>
+                           <tr>
+                             <td class="info" colspan="8"><strong><h4>2.SEGREGACIÓN Y APROVECHAMIENTO </h4></strong></td>
+
+                          </tr>
+
+                           <tr>
+
+                               <td>2.1</td>
+       <td colspan="3">Se identifica y analizan las posibilidades de minimizar reutilizar<br> y comercializar cada uno de los residuos que se genera.Dicho análisis <br>se encuentra actualizado y registrado  </td>
+                               <td> <input id="si" type="radio" name="2.1" size="1" ></td>
+                               <td> <input id="no" type="radio" name="2.1" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="2.1" size="1" ></td>
+                               <td> <input id="na" type="radio" name="2.1" size="1" ></td>
+                           </tr>
+
+                            <tr>
+
+                               <td>2.2</td>
+       <td colspan="3">El área de economía lleva un control de los ingresos <br> que se producen por concepto de comercialización de desechos sólidos <br> y entrega semestralmente  copia del mismo al coordinador <br> de la gestión ambiental de la entidad</td>
+                               <td> <input id="si" type="radio" name="2.2" size="1" ></td>
+                               <td> <input id="no" type="radio" name="2.2" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="2.2" size="1" ></td>
+                               <td> <input id="na" type="radio" name="2.2" size="1" ></td>
+                           </tr>
+
+
+                            <tr>
+
+                               <td>2.3</td>
+       <td colspan="3">Esta convenido con la empresa de materias primas <br> u otras partes interesadas la transferencia <br> y frecuencia de recogida de residuos<br> que puedan ser aprovechados por los mismos</td>
+                               <td> <input id="si" type="radio" name="2.3" size="1" ></td>
+                               <td> <input id="no" type="radio" name="2.3" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="2.3" size="1" ></td>
+                               <td> <input id="na" type="radio" name="2.3" size="1" ></td>
+                           </tr>
+
+                            <tr>
+
+                               <td>2.4</td>
+       <td colspan="3">El personal elimina los residuos en los recipientes respectivos de acuerdo a su clase</td>
+                               <td> <input id="si" type="radio" name="2.4" size="1" ></td>
+                               <td> <input id="no" type="radio" name="2.4" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="2.4" size="1" ></td>
+                               <td> <input id="na" type="radio" name="2.4" size="1" ></td>
+                           </tr>
+
+                           </tbody>
+
+
+                          <thead>
+                          <tr>
+                              <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                              <td class="info" colspan="4"><strong>SITUACION</strong></td>
+                          </tr>
+                          
+                          <tr class="success">
+                              <td id="si"><strong>SI</strong></td>
+                              <td id="no"><strong>NO</strong></td>
+                              <td id="pa"><strong>PA</strong></td>
+                              <td id="na"><strong>NA</strong></td>
+                          </tr>        
+                         </thead>
+
+                               <tbody>
+                               <tr>
+                               <td class="info" colspan="8"><strong><h4>3.ALMACENAMIENTO TEMPORAL</h4></strong></td>
+                              </tr>
+
+                           <tr>
+                               <td>3.1</td>
+       <td colspan="3">Se cuenta con los recipientes y contenedores con tapas necesarias <br> y de capacidad adecuada para el almacenamiento de los residuos <br> incluyendo los destinados al reciclaje y aprovechamiento</td>
+                               <td> <input id="si" type="radio" name="3.1" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="3.1" size="1"  ></td>
+                               <td> <input id="pa" type="radio" name="3.1" size="1"  ></td>
+                               <td> <input id="na" type="radio" name="3.1" size="1"  ></td>
+                          </tr>
+                          
+                          <tr>
+                               <td>3.2</td>
+       <td colspan="3">Los recipientes y contenedores están rotulados con los símbolos correspondientes <br>según la clasificación adoptada para el almacenamiento de residuos <br> incluyendo los destinados al reciclaje y aprovechamiento </td>
+                               <td> <input id="si" type="radio" name="3.2" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.2" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.2" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.2" size="1" ></td>
+                          </tr>
+                          
+                          <tr>
+                               <td>3.3</td>
+       <td colspan="3">Los recipientes para el almacenamiento de los residuos son los apropiados: <br>impermeables libres de agujeros o hendiduras que propicien <br> la salida de todo o parte del contenido constan de una estructura fuerte para resistir<br> su manipulación fácil de llenar vaciar y limpiar y de tapa ajustada </td>
+                               <td> <input id="si" type="radio" name="3.3" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="3.3" size="1"  ></td>
+                               <td> <input id="pa" type="radio" name="3.3" size="1"  ></td>
+                               <td> <input id="na" type="radio" name="3.3" size="1"  ></td>
+                          </tr>
+
+                          <tr>
+                               <td>3.4</td>
+       <td colspan="3">Los recipientes se mantienen debidamente tapados</td>
+                               <td> <input id="si" type="radio" name="3.4" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="3.4" size="1"  ></td>
+                               <td> <input id="pa" type="radio" name="3.4" size="1"  ></td>
+                               <td> <input id="na" type="radio" name="3.4" size="1"  ></td>
+                          </tr>
+
+                          <tr>
+                               <td>3.5</td>
+       <td colspan="3">Los recipientes y contenedores destinados al almacenamiento de residuos sólidos <br> son higienizados periódicamente</td>
+                               <td> <input id="si" type="radio" name="3.5" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.5" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.5" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.5" size="1" ></td>
+                          </tr>
+
+
+                            <tr>
+                               <td>3.6</td>
+       <td colspan="3">Los recipientes y contenedores destinados al almacenamiento de residuos de alimentos <br> se mantienen tapados y limpios son lavados y desprovistos de  transportación externa  </td>
+                               <td> <input id="si" type="radio" name="3.6" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.6" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.6" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.6" size="1" ></td>
+                          </tr>
+
+
+                            <tr>
+                               <td>3.7</td>
+       <td colspan="3">Las áreas para el almacenamiento final de residuos están acondicionadas adecuadamente<br> teniendo en cuenta el volumen clase de residuos que se genera <br> y la frecuencia de su recolección y transportación externa</td>
+                               <td> <input id="si" type="radio" name="3.7" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="3.7" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.7" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.7" size="1" ></td>
+                          </tr>
+
+
+                            <tr>
+                               <td>3.8</td>
+       <td colspan="3">El almacenamiento primario de los residuos se realizan en cada punto <br>de generación de los mismos</td>
+                               <td> <input id="si" type="radio" name="3.8" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="3.8" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.8" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.8" size="1" ></td>
+                          </tr>
+                          <tr>
+       <td>3.9</td>
+       <td colspan="3">Los puntos de almacenamiento final son de uso exclusivo están delimitados <br> y señalizados convenientemente y cumplen los siguientes requisitos: <br>
+- tienen buenas vías de acceso y de escorrentía <br>
+- cuentan con las condiciones de seguridad y PCI requeridas <br>
+- son higienizarse y desinfectarse periódicamente <br>
+- cuentan con acciones de mantenimiento y conservación <br>  
+                        </td>
+                               <td> <input id="si" type="radio" name="3.9" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.9" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.9" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.9" size="1" ></td>
+                              </tr>
+                              <tr>
+       <td>3.10</td>
+       <td colspan="3">En el caso de áreas de almacenamiento final de residuos <br> de alimentos la misma cumple además los siguientes requisitos: <br>
+- Están protegidas de la intemperie y temperaturas elevadas que no permitan el  acceso <br> de animales están dotadas de ductos de ventilación o de aberturas  cubiertas con mallas <br>
+-Están revestidas internamente (piso y paredes) con materiales liso, <br> resistentes lavable, impermeable y de color claro<br>
+-El piso cuenta con pendiente del 2% dirigida al descargue y para el lado opuesto de la entrada<br>
+-La puerta está dotada de protección inferior para evitar el acceso de los vectores
+</td>
+                               <td> <input id="si" type="radio" name="3.10" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.10" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.10" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.10" size="1" ></td>
+                              </tr>
+                          <tr>
+        <td>3.11</td>
+       <td colspan="3">Los residuos de cualquier tipo no se acumulan fuera de los recipientes destinados a este fin</td>
+                               <td> <input id="si" type="radio" name="3.11" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.11" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.11" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.11" size="1" ></td>
+                              </tr>
+                              <tr>
+        <td>3.12</td>
+       <td colspan="3">Los residuos no putrescibles recuperables (frasco, vidrio, metales, cartón, plástico y otros ) <br> se almacenan en orden y clasificados en los depósitos destinados a este fin en los <br>lugares adecuados  donde no constituyan criaderos o guaridas de artrópodos <br> o roedores hasta el momento de su traslado</td>
+                               <td> <input id="si" type="radio" name="3.12" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.12" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.12" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.12" size="1" ></td>
+                              </tr>
+                              <tr>
+        <td>3.13</td>
+       <td colspan="3">Las gomas de vehículos de transporte desechadas o no son almacenadas siempre bajo techo <br> y cumplen lo establecido en las normas cubanas sobre protección contra incendios vigentes</td>
+                               <td> <input id="si" type="radio" name="3.13" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.13" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.13" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.13" size="1" ></td>
+                              </tr>
+                              <tr>
+        <td>3.14</td>
+       <td colspan="3">Los residuos que por su tamaño y forma no pueden depositarse en los contenedores <br>cumplen con los siguientes requisitos:<br>
+-No se sitúan en solares yermos u otras áreas externas a la entidad no destinadas a estos fines<br> hasta tanto no se obtenga el permiso de las autoridades locales<br>
+-No están esparcidos por el territorio de la entidad están ubicados temporalmente<br> en lugares  seleccionados a este fin hasta se decida disposición final
+</td>
+                               <td> <input id="si" type="radio" name="3.14" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.14" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.14" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.14" size="1" ></td>
+                              </tr>
+                              <tr>
+        <td>3.15</td>
+       <td colspan="3">Se mantienen las áreas de almacenamiento limpias y desinfectadas</td>
+                               <td> <input id="si" type="radio" name="3.15" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.15" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.15" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.15" size="1" ></td>
+                              </tr>
+                              <tr>
+       <td>3.16</td>
+       <td colspan="3">En el almacenamiento de residuos clasificados <br> como peligrosos se cumplen con los siguientes requisitos:<br>
+-Se ubican lejos de focos de ignición y fuentes de calor<br>
+-Se identifican el tipo de desecho peligroso que contienen cada recipiente<br>
+-Se asegura que el piso tenga pendiente adecuada<br> y el drenaje vierta a un lugar seguro<br>
+-Se asegura que el suelo sea impermeable y esté libre de grietas<br> o instalar bandejas de contención<br>
+-Se tiene en cuenta en el almacenamiento de los residuos <br>las incompatibilidades químicas entre los mismos<br>
+</td>
+                               <td> <input id="si" type="radio" name="3.16" size="1" ></td>
+                               <td> <input id="no" type="radio" name="3.16" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="3.16" size="1" ></td>
+                               <td> <input id="na" type="radio" name="3.16" size="1" ></td>
+                              </tr>
+                              <tr>
+
+          <td class="info" colspan="8"><strong><h4>4.RECOLECCIÓN MOVIMIENTO INTERNO Y TRANSPORTACIÓN EXTERNA</h4></strong></td>
+          </tr>
+
+                    </tbody>
+
+
+                         <thead>
+                          <tr>
+                              <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                              <td class="info" colspan="4"><strong>SITUACION</strong></td>
+                          </tr>
+                          
+                          <tr class="success">
+                              <td id="si"><strong>SI</strong></td>
+                              <td id="no"><strong>NO</strong></td>
+                              <td id="pa"><strong>PA</strong></td>
+                              <td id="na"><strong>NA</strong></td>
+                          </tr>        
+                         </thead>
+
+                    <tbody>
+                          
+
+
+                           <tr>
+                               <td>4.1</td>
+                               <td colspan="3">El personal de limpieza o el encargado a estos fines recolecta los residuos
+y los transporta desde los puntos de almacenamiento primarios
+hasta los puntos de almacenamiento final de acuerdo a la frecuencia de generación</td>
+                               <td> <input id="si" type="radio" name="4.1" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="4.1" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="4.1" size="1" ></td>
+                               <td> <input id="na" type="radio" name="4.1" size="1" ></td>
+                          </tr>
+
+
+                           <tr>
+                               <td>4.2</td>
+                               <td colspan="3">La recolección de los residuos en los puntos de almacenamiento final su traslado 
+hacia el vehículo recolector y su transportación hacia el punto de disposición final
+se realiza con una frecuencia que garantiza las condiciones higiénicas sanitarias 
+y que no se acumulen residuos en los puntos de almacenamiento</td>
+                               <td> <input id="si" type="radio" name="4.2" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="4.2" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="4.2" size="1" ></td>
+                               <td> <input id="na" type="radio" name="4.2" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>4.3</td>
+                               <td colspan="3">El personal que manipula residuos cuenta y utiliza los equipos de protección personal 
+adecuados dicho personal se realiza periódicamente 
+los exámenes médicos preventivos los cuales se registran adecuadamente</td>
+                               <td> <input id="si" type="radio" name="4.3" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="4.3" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="4.3" size="1" ></td>
+                               <td> <input id="na" type="radio" name="4.3" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.4</td>
+                               <td colspan="3">La recolección movimiento interno y transporte externo de los residuos
+se realiza garantizando que no ocurran derrames durante el trayecto
+y no se produzcan emisiones de polvo u olores desagradables</td>
+                               <td> <input id="si" type="radio" name="4.4" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="4.4" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="4.4" size="1" ></td>
+                               <td> <input id="na" type="radio" name="4.4" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.5</td>
+                               <td colspan="3">Los vehículos de recolección y transporte de residuos son lavados 
+y desinfectados después de cada jornada de trabajo</td>
+                               <td> <input id="si" type="radio" name="4.5" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="4.5" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="4.5" size="1" ></td>
+                               <td> <input id="na" type="radio" name="4.5" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.6</td>
+                               <td colspan="3">Los sistemas de tratamiento canalización y transportación interna de residuales líquidos
+cuentan con acciones de mantenimiento y limpieza programadas</td>
+                               <td> <input id="si" type="radio" name="4.6" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="4.6" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="4.6" size="1" ></td>
+                               <td> <input id="na" type="radio" name="4.6" size="1" ></td>
+                          </tr>
+                         
+
+
+                               <tr >
+                                  <td class="info" colspan="8"><strong><h4>5. TRATAMIENTO Y MONITOREO</h4></strong></td>
+                               </tr>
+
+                           <tr>
+                               <td>5.1</td>
+                               <td colspan="3">Los residuales oleosos generados en actividades y procesos no se vierten al medio 
+sin un tratamiento físico en trampas de grasas</td>
+                               <td> <input id="si" type="radio" name="5.1" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="5.1" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="5.1" size="1" ></td>
+                               <td> <input id="na" type="radio" name="5.1" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>5.2</td>
+                               <td colspan="3">Están confeccionado un plan de monitoreo de los residuales oleosos para monitorear 
+el cumplimiento de los parámetros de vertimientos requeridos</td>
+                               <td> <input id="si" type="radio" name="5.2" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="5.2" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="5.2" size="1" ></td>
+                               <td> <input id="na" type="radio" name="5.2" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>5.3</td>
+                               <td colspan="3">Los órganos de tratamiento (trampas de grasa) 
+cuentan con acciones de mantenimientos y limpieza programada</td>
+                               <td> <input id="si" type="radio" name="5.3" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="5.3" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="5.3" size="1" ></td>
+                               <td> <input id="na" type="radio" name="5.3" size="1" ></td>
+                          </tr>
+                          <tr>
+
+          <td class="info" colspan="8"><strong><h4>6.DISPOSICION FINAL</h4></strong></td>
+          </tr>
+
+                    </tbody>
+
+
+                         <thead>
+                          <tr>
+                              <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                              <td class="info" colspan="4"><strong>SITUACION</strong></td>
+                          </tr>
+                          
+                          <tr class="success">
+                              <td id="si"><strong>SI</strong></td>
+                              <td id="no"><strong>NO</strong></td>
+                              <td id="pa"><strong>PA</strong></td>
+                              <td id="na"><strong>NA</strong></td>
+                          </tr>        
+                         </thead>
+
+                    <tbody>
+                          
+
+
+                           <tr>
+                               <td>6.1</td>
+                               <td colspan="3">La disposición final de residuos sólidos nunca se realiza <br> en microvertederos ilegales ya sea dentro o fuera de la entidad o en los cuerpos de agua <br> ya sea directamente o mediante embarcaciones</td>
+                               <td> <input id="si" type="radio" name="6.1" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="6.1" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="6.1" size="1" ></td>
+                               <td> <input id="na" type="radio" name="6.1" size="1" ></td>
+                          </tr>
+
+
+                           <tr>
+                               <td>6.2</td>
+                               <td colspan="3">La disposición final de los residuales líquidos oleosos <br>se realiza cumpliendo los parámetros de vertimientos.</td>
+                               <td> <input id="si" type="radio" name="6.2" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="6.2" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="6.2" size="1" ></td>
+                               <td> <input id="na" type="radio" name="6.2" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>6.3</td>
+                               <td colspan="3">La disposición final de los residuos fuera de la entidad <br> se realiza en lugares destinados a estos efectos por las autoridades locales</td>
+                               <td> <input id="si" type="radio" name="6.3" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="6.3" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="6.3" size="1" ></td>
+                               <td> <input id="na" type="radio" name="6.3" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>6.4</td>
+                               <td colspan="3">Están gestionados y se cuenta con los permisos correspondientes para la  disposición final <br>de los residuos (incluyendo los peligrosos) generados en las instalaciones</td>
+                               <td> <input id="si" type="radio" name="6.4" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="6.4" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="6.4" size="1" ></td>
+                               <td> <input id="na" type="radio" name="6.4" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>6.5</td>
+                               <td colspan="3">No existen afectaciones al suelo o aguas subterráneas como consecuencia de la  generación<br> y manejo de los residuos en las áreas de la entidad o aledañas a la misma</td>
+                               <td> <input id="si" type="radio" name="6.5" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="6.5" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="6.5" size="1" ></td>
+                               <td> <input id="na" type="radio" name="6.5" size="1" ></td>
+                          </tr>
+                          
+
+                          </tbody>
+
+                       
+                    </tbody>
+
+
+                       </table>
+                         </br>
+                          </br>
+
+                    <div class="opciones">
+                       <button class="btn btn-primary" onclick="saveData()"><h4>Guardar</h4></button>
+
+                       <button class="btn btn-danger" onclick="loadData()"><h4>Cancelar</h4></button>
+                       </br>
+                       </br>
+                       
+                    </div>
+
+
+                      </center>
+                      </div>
+
+                <!-- End to do list -->
+                
+                <!-- start of weather widget -->
+                
+                <!-- end of weather widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            INSPAT - Inspeccion Ambiental para Tecnologos <a href="https://www.sena.com">ADSI 902923</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/bernii/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="js/flot/jquery.flot.orderBars.js"></script>
+    <script src="js/flot/date.js"></script>
+    <script src="js/flot/jquery.flot.spline.js"></script>
+    <script src="js/flot/curvedLines.js"></script>
+    <!-- jVectorMap -->
+    <script src="js/maps/jquery-jvectormap-2.0.3.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+   
+    <script language="javascript">
+// buscamos el metodo para los tipos de navegadores
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+</script>
+    
+    
+  </body>
+</html>

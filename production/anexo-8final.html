@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+
+    <title>.:RAI-A7:.</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- jVectorMap -->
+    <link href="css/maps/jquery-jvectormap-2.0.3.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-envira"></i> <span>INSPAT</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido</span>
+                <h2>Juan Duque</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br/>
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+             <div class="menu_section">
+                <h3>TGA</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Inicio </span></a>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i> Reportes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="Nuevoreporte.html">Nuevo Reporte</a></li>
+                      <li><a href="historico_reportes.html">Historico de Reporte</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-newspaper-o"></i>Programas Ambientales<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                     <li><a href="Crearprograma.html">Crear Programa</a></li>
+                     <li><a href="programas_activos.html">Ver Programas Activos</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-industry"></i> Gestion de Empresa <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="crearempresa.html">Registrar Empresa</a></li>
+                      <li><a>RAI<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            
+                            </li>
+                            <li><a href="anexo1.html">Anexo 1</a>
+                            </li>
+                            <li><a href="anexo2.html">Anexo 2</a>
+                            </li>
+                            <li><a href="anexo3.html">Anexo 3</a>
+                            </li>
+                            <li><a href="anexo4.html">Anexo 4</a>
+                            </li>
+                            <li><a href="anexo5.html">Anexo 5</a>
+                            </li>
+                            <li><a href="anexo6.html">Anexo 6</a>
+                            </li>
+                            <li><a href="anexo7.html">Anexo 7</a>
+                            </li>
+                            <li><a href="anexo8.html">Anexo 8</a>
+                            </li>
+                            <li><a href="anexo9.html">Anexo 9</a>
+                            </li>
+                            <li><a href="anexo10.html">Anexo 10</a>
+                            </li>
+                            <li><a href="anexo11.html">Anexo 11</a>
+                            </li>
+                            <li><a href="anexo12.html">Anexo 12</a>
+                            </li>
+                            <li><a href="anexo13.html">Anexo 13</a>
+                            </li>
+                          </ul>
+                        </li>
+                     
+                    </ul>
+                  </li>
+                  <li><a href="normativa.html"><i class="fa fa-file-text"></i>Normativa Vigente </span></a>
+                  <li><a href="contactoadmin.html"><i class="fa fa-envelope"></i> Contactar al Administrador </span></a>
+                    
+                  </li>
+                  
+                </ul>
+              </div>
+             
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip">
+                <span class="glyphicon "></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true" onclick="launchFullScreen(document.documentElement);"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Cerrar Sesion">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top">
+                <span class="glyphicon" ></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav class="" role="navigation">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+        
+
+          <div class="row">
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+                    <div class="container">
+
+                       <center>
+                         <table class="table table-reflow table-bordered table-condensed">
+                         
+                           <thead>
+                              <tr>
+                                <td bgcolor="#3CB4F1" colspan="8"><h3>LISTA DE CHEQUEO PARA LA SUPERVICION DE LAS SQP</h3></td>
+                              </tr>
+
+                                  <tr>
+                                  <td class="warning">N° INSPECCIÓN:</td>
+                                  <td class="warning"> <input id="inspeccion" type="text" name="inspeccion"></td>
+                                  <td class="warning">FECHA:</td>
+                                  <td class="warning"> <input id="fecha" type="date" name="fecha"></td>
+                              <td class="warning">HORA:</td>
+                              <td class="warning" colspan="8"> <input id="hora" type="text" name="hora"></td>
+                              </tr>
+
+                              <tr>
+                                  <td class="warning">UNIDAD:</td>
+                                  <td class="warning"> <input id="unidad"  type="text" name="unidad"></td>
+                                  <td class="warning">INSTALACIÓN:</td>
+                                  <td class="warning"> <input id="instalcion" type="text" name="instalacion"></td>
+                              <td class="warning">AREAS:</td>
+                              <td class="warning"colspan="8"> <input id="areas" type="text" name="areas"></td>
+                              </tr>
+
+                           </thead>
+
+                           
+                         
+                                 
+
+                         
+                          <thead>
+                    <tr>
+                        <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                      <td class="info"  colspan="4"><strong>SITUACION</strong></td>
+                    </tr>
+                    <tr class="success">
+                            <td id="si"><strong>SI</strong></td>
+                            <td id="no"><strong>NO</strong></td>
+                            <td id="pa"><strong>PA</strong></td>
+                            <td id="na"><strong>NA</strong></td>
+                    </tr>
+                              
+                            
+                         </thead>
+                           <tbody>
+
+                         <tr>
+                                <td class="info" colspan="8"><strong><h4>1.ADQUISICIÓN</h4></strong></td>
+
+                              </tr>
+
+                           <tr>
+
+                               <td>1.1</td>
+                               <td colspan="3">El comprador o persona designada para esta función conoce <br> y aplica las  regulaciones nacionales vigentes y  el procedimiento de información <br> y consentimiento previo antes de adquirir un producto químico</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1"></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1"></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1"></td>
+                           </tr>
+                          
+                          <tr>
+
+                               <td>1.2</td>
+                               <td colspan="3">El comprador o persona designada para esta función procura del proveedor <br>o fabricante la ficha de datos de seguridad de las SQP antes de adquirirlas</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                           </tr>
+                           <tr>
+
+                               <td>1.3</td>
+                               <td colspan="3">A partir de las fichas de datos de seguridad de la SQP obtenidas del fabricante o<br> proveedor y/o de otras fuentes de datos confiables como la FISQ el personal <br> designado confecciona las hojas internas de datos de seguridad de las SQP que se <br>adquieren</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                               </tr>
+
+                                <tr>
+                                <td>1.4</td>
+                               <td colspan="3">El comprador o persona designada para esta función no adquiere productos<br> etiquetados deficientes o no etiquetados</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                               </tr>
+
+                                <tr>
+
+                               <td>1.5</td>
+                               <td colspan="3">El comprador o persona designada para esta función no adquiere productos<br>envasados en recipientes en mal estado</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                               </tr>
+
+
+                                <tr>
+
+                               <td>1.6</td>
+                               <td colspan="3">El comprador o persona designada para esta función no adquiere productos<br>vencidos o caducados</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                               </tr>
+                              </tbody>
+                               <thead>
+                                  <tr>
+                                      <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                                    <td class="info"  colspan="4"><strong>SITUACION</strong></td>
+                                  </tr>
+                                  <tr class="success">
+                                          <td id="si"><strong>SI</strong></td>
+                                          <td id="no"><strong>NO</strong></td>
+                                          <td id="pa"><strong>PA</strong></td>
+                                          <td id="na"><strong>NA</strong></td>
+                                  </tr>
+                              
+                            
+                         </thead>
+                           <tr>
+                             <td class="info" colspan="8"><strong><h4>2.SEGREGACIÓN Y APROVECHAMIENTO </h4></strong></td>
+
+                          </tr>
+
+                           <tr>
+
+                               <td>2.1</td>
+       <td colspan="3">El responsable de transporte asegura las condiciones satisfactorias técnicas<br> de señalización y seguridad en el transporte de SQP</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                           </tr>
+
+                            <tr>
+
+                               <td>2.2</td>
+       <td colspan="3">El responsable de transporte asegura las condiciones satisfactorias de PCI en el <br>transporte de SQP</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                           </tr>
+
+
+                            <tr>
+
+                               <td>2.3</td>
+       <td colspan="3">El responsable del transporte tramita los permisos de transportación de SQP<br>en los casos estipulados por la regulación del MININT</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                           </tr>
+
+                            <tr>
+
+                               <td>2.4</td>
+       <td colspan="3">El conductor del vehículo de transporte lee los documentos de transporte antes <br> de cargar la mercancía y saber qué hacer en caso de accidente o derrame</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                           </tr>
+                           <td>2.5</td>
+                         <td colspan="3">El conductor no deja sin vigilancia el vehículo que transporta las mercancías <br> peligrosas</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+                         <td>2.6</td>
+                         <td colspan="3">El conductor tiene en cuenta que la carga y descarga de algunas mercancías<br>peligrosas en lugares públicos requiere la presencia de las autoridades<br> (policía persona de aduanas) o bien una notificación a las mismas</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                               <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                               <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.7</td>
+                         <td colspan="3">El vehículo que transporta SQP no lleva pasajeros</td>
+                                         <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                      </tr>
+
+
+                         <td>2.8</td>
+                         <td colspan="3">El conductor no fuma durante las operaciones de carga ni cerca de un vehículo<br> que vaya a descargarse así como tampoco dentro del vehículo</td>
+                                         <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.9</td>
+                         <td colspan="3">Nunca se hace uso de llamas abiertas sea del tipo que sea en un lugar cercano <br> a mercancías peligrosas o desconocidas</td>
+                                           <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.10</td>
+                         <td colspan="3">No se mantiene el motor en marcha si no es necesario para las operaciones <br> de carga (bombeo, elevación, mecánica....)</td>
+                                           <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.11</td>
+                         <td colspan="3">El conductor comprueba la concordancia entre las mercancías los nombres <br> y las cantidades reales y las respectivas especificaciones detalladas<br> en los documentos adjuntos</td>
+                                           <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.12</td>
+                         <td colspan="3">El conductor comprueba que las mercancías peligrosas no entran en contacto <br> con alimentos o piensos</td>
+                                     <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+
+
+                         <td>2.13</td>
+                         <td colspan="3">El conductor comprueba que las mercancías peligrosas y el vehículo llevan etiquetas</td>
+                                     <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.14</td>
+                         <td colspan="3">El conductor separa las mercancías peligrosas de otros materiales transportados</td>
+                                     <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.15</td>
+                         <td colspan="3">El conductor comprueba que la carga no pueda moverse durante el transporte <br>(que este bien sujeta y que no haya sustancias aceitosas en el suelo que puedan<br> provocar deslizamientos )</td>
+                                     <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.16</td>
+                         <td colspan="3">El conductor comprueba que dispone del equipo necesario para llevar a cabo<br> con seguridad las labores de carga o descarga y el transporte (permiso de <br>transportación  conectores de puesta a tierra, equipos de protección personal <br>dispositivos de PCI, etc.</td>
+                                     <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.17</td>
+                         <td colspan="3">El conductor no transporta mercancías peligrosas que se encuentren dañadas<br> así como recipientes o envases que tengan fugas</td>
+                                     <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+
+                         <td>2.18</td>
+                         <td colspan="3">El conductor no abre recipientes o envases que contengan mercancías peligrosas</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+                         <td>2.19</td>
+                         <td colspan="3">El conductor aplica la matriz de incompatibilidades químicas <br> para cargar el vehículo</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+
+
+                         <td>2.20</td>
+                         <td colspan="3">El personal involucrado en esta etapa manipula las SQP observando <br> las regulaciones nacionales internas y las recomendaciones de buenas prácticas</td>
+                               <td> <input id="si" type="radio" name="chequeo" size="1"  ></td>
+                                         <td> <input id="no" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="pa" type="radio" name="chequeo" size="1" ></td>
+                                         <td> <input id="na" type="radio" name="chequeo" size="1" ></td>
+                         </tr>
+
+                           </tbody>
+
+
+                          <thead>
+                          <tr>
+                              <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                              <td class="info" colspan="4"><strong>SITUACION</strong></td>
+                          </tr>
+                          
+                          <tr class="success">
+                              <td id="si"><strong>SI</strong></td>
+                              <td id="no"><strong>NO</strong></td>
+                              <td id="pa"><strong>PA</strong></td>
+                              <td id="na"><strong>NA</strong></td>
+                          </tr>        
+                         </thead>
+
+                               <tbody>
+                               <tr>
+                               <td class="info" colspan="8"><strong><h4>3.ALMACENAMIENTO</h4></strong></td>
+                              </tr>
+
+                           <tr>
+                               <td>3.1</td>
+       <td colspan="3">Están identificadas e inventariadas las SQP que se manejan y almacenan</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1"  ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1"  ></td>
+                               <td> <input id="na" type="text" name="na" size="1"  ></td>
+                          </tr>
+                          
+                          <tr>
+                               <td>3.2</td>
+       <td colspan="3">El responsable del almacén o encargo de esta función recopila y tiene disponibles <br>todas las hojas internas de datos de seguridad y las guías de respuesta<br> de emergencia de las SQP  </td>
+                               <td> <input id="si" type="text" name="si" size="1" ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          
+                          <tr>
+                               <td>3.3</td>
+       <td colspan="3">El responsable del almacén o encargado de esta agrupa los productos que tienen <br>la misma clase de riesgo según la clasificación de peligro de naciones unidas</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1"  ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1"  ></td>
+                               <td> <input id="na" type="text" name="na" size="1"  ></td>
+                          </tr>
+
+                          <tr>
+                               <td>3.4</td>
+       <td colspan="3">El responsable del almacén o encargado de esta función identifica los posibles <br>separadores y los aplica en el almacenamiento</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1"  ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1"  ></td>
+                               <td> <input id="na" type="text" name="na" size="1"  ></td>
+                          </tr>
+
+                          <tr>
+                               <td>3.5</td>
+       <td colspan="3">El responsable del almacén o encargado de esta función identifica los productos<br> que dentro de la misma clase de riesgo son incompatibles</td>
+                               <td> <input id="si" type="text" name="si" size="1" ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+
+                            <tr>
+                               <td>3.6</td>
+       <td colspan="3">El responsable del almacén o encargado de esta función identifica dentro de las <br>diferentes clases aquella que requiera condiciones especiales de almacenamiento <br>como gases comprimidos sustancias radioactivas, materiales inflamables, <br>explosivos o extremamente reactivos etc. </td>
+                               <td> <input id="si" type="text" name="si" size="1" ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+
+                            <tr>
+                               <td>3.7</td>
+       <td colspan="3">El responsable del almacén o encargado de esta función aplica la matriz <br>de incompatibilidades de materiales peligrosos cruzando <br>las diferentes clases  de riesgo identificadas.</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+
+                            <tr>
+                               <td>3.8</td>
+       <td colspan="3">El responsable del almacén o encargado de esta función ubica en el plano <br>de su almacén la posición final que ocuparan las SQP considerando <br> áreas de desplazamiento de personal, movimiento de estibadores, montacargas,<br> áreas de dispensación, salidas de emergencia, extintores, duchas, zona  de despacho etc.</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+          <td class="info" colspan="8"><strong><h4>4.USO</h4></strong></td>
+          </tr>
+
+                    </tbody>
+
+
+                         <thead>
+                          <tr>
+                              <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                              <td class="info" colspan="4"><strong>SITUACION</strong></td>
+                          </tr>
+                          
+                          <tr class="success">
+                              <td id="si"><strong>SI</strong></td>
+                              <td id="no"><strong>NO</strong></td>
+                              <td id="pa"><strong>PA</strong></td>
+                              <td id="na"><strong>NA</strong></td>
+                          </tr>        
+                         </thead>
+
+                    <tbody>
+                          
+
+
+                           <tr>
+                               <td>4.1</td>
+                               <td colspan="3">El personal involucrado en esta etapa hace uso de las SQP de acuerdo<br> a las Especificaciones y recomendaciones del fabricante</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+
+                           <tr>
+                               <td>4.2</td>
+                               <td colspan="3">Existen las condiciones satisfactorias de PCI para el uso de las SQP</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>4.3</td>
+                               <td colspan="3">Están señalizados los riesgos químicos en los lugares físicos que correspondan<br> en dependencia de las características peligrosas de la SQP que se usan</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.4</td>
+                               <td colspan="3">El personal involucrado en esta etapa no usa productos etiquetados <br> deficientes o no etiquetados</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.5</td>
+                               <td colspan="3">El personal involucrado en esta etapa no usa productos envasados <br> en recipientes en mal estado</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.6</td>
+                               <td colspan="3">El personal involucrado en esta etapa no usa productos vencidos o caducados</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>4.7</td>
+                               <td colspan="3">El personal involucrado en esta etapa manipula las SQP observando <br>las regulaciones nacionales internas y las recomendaciones de buenas prácticas</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                           <tr>
+                               <td>4.8</td>
+                               <td colspan="3">El personal involucrado en esta etapa aplica la matriz de incompatibilidades <br>químicas de las SQP</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>      
+
+                          <tr>
+                               <td>4.9</td>
+                               <td colspan="3">Se dispone del equipo necesario para llevar a cabo con seguridad <br>las labores de uso de las SQP</td>
+                               <td> <input id="si" type="text" name="si" size="1" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" size="1" ></td> 
+                          </tr>
+
+                          <tr>
+                               <td>4.10</td>
+                               <td colspan="3">Están disponibles en sus respectivas áreas las hojas internas de datos de seguridad   <br>y las guías de respuesta de emergencia de las SQP que se manejan</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                         
+
+
+                               <tr >
+                                  <td class="info" colspan="8"><strong><h4>5. DISPOSICION FINAL DE LOS RESIDUOS GANERADOS EN EL MANEJO Y USO DE LAS SQP</h4></strong></td>
+                               </tr>
+
+                           <tr>
+                               <td>5.1</td>
+                               <td colspan="3">Se cumple los requisitos de manejo en cada una de las etapas relacionados <br> en el OA-PA 0104"procedimento específico para la gestión <br> de los residuos líquidos solidos y peligrosos" para los residuos peligrosos</td>
+                               <td> <input id="si" type="text" name="si" size="1" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>5.2</td>
+                               <td colspan="3">Se asegura la disposición final adecuada de los envases vacíos así como <br>de los productos químicos no identificados vencidos o caducados</td>
+                               <td> <input id="si" type="text" name="si" size="1" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>5.3</td>
+                               <td colspan="3">Se asegura que los envases vacíos de SQP solo se usen para reenvasar <br>el mismo producto y nunca se empleara para otro fin</td>
+                               <td> <input id="si" type="text" name="si" size="1" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" size="1" ></td>
+                          </tr>
+                           <tr>
+                               <td>5.4</td>
+                               <td colspan="3">No existen afectaciones al suelo o aguas subterráneas como consecuencia <br>de la generación y manejo de los residuos en las áreas <br>de la entidad o aledañas a la misma</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                              </tr>
+                          <tr>
+
+          <td class="info" colspan="8"><strong><h4>6.EQUIPOS DE PROTECCION INDIVIDUAL Y ROPA DE TRABAJO</h4></strong></td>
+          </tr>
+
+                    </tbody>
+
+
+                         <thead>
+                          <tr>
+                              <td bgcolor="#57DD7F" rowspan="2" colspan="4"><strong>ESTADO ESPERADO</strong></td>
+                              <td class="info" colspan="4"><strong>SITUACION</strong></td>
+                          </tr>
+                          
+                          <tr class="success">
+                              <td id="si"><strong>SI</strong></td>
+                              <td id="no"><strong>NO</strong></td>
+                              <td id="pa"><strong>PA</strong></td>
+                              <td id="na"><strong>NA</strong></td>
+                          </tr>        
+                         </thead>
+
+                    <tbody>
+                          
+
+
+                           <tr>
+                               <td>6.1</td>
+                               <td colspan="3">Se encuentran marcados o codificados para poderlos identificar por su usuario</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+
+                           <tr>
+                               <td>6.2</td>
+                               <td colspan="3">Se guardan en los lugares específicos de uso personalizado (armario o taquillas)</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+
+                          <tr>
+                               <td>6.3</td>
+                               <td colspan="3">Las eléctricas tienen el cableado y las conexiones en buen estado</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          <tr>
+                               <td>6.4</td>
+                               <td colspan="3">Se encuentran limpios y en buen estado</td>
+                               <td> <input id="si" type="text" name="si" size="1"  ></td>
+                               <td> <input id="no" type="text" name="no" size="1" ></td>
+                               <td> <input id="pa" type="text" name="pa" size="1" ></td>
+                               <td> <input id="na" type="text" name="na" size="1" ></td>
+                          </tr>
+                          
+
+                          </tbody>
+
+                       
+                    </tbody>
+
+
+                       </table>
+                         </br>
+                          </br>
+
+                    <div class="opciones">
+                       <button class="btn btn-primary" onclick="saveData()"><h4>Guardar</h4></button>
+
+                       <button class="btn btn-danger" onclick="loadData()"><h4>Cancelar</h4></button>
+                       </br>
+                       </br>
+                       
+                    </div>
+
+
+                      </center>
+                      </div>
+
+                <!-- End to do list -->
+                
+                <!-- start of weather widget -->
+                
+                <!-- end of weather widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            INSPAT - Inspeccion Ambiental para Tecnologos <a href="https://www.sena.com">ADSI 902923</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/bernii/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="js/flot/jquery.flot.orderBars.js"></script>
+    <script src="js/flot/date.js"></script>
+    <script src="js/flot/jquery.flot.spline.js"></script>
+    <script src="js/flot/curvedLines.js"></script>
+    <!-- jVectorMap -->
+    <script src="js/maps/jquery-jvectormap-2.0.3.min.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+   
+    <script language="javascript">
+// buscamos el metodo para los tipos de navegadores
+function launchFullScreen(element) {
+  if(element.requestFullScreen) {
+    element.requestFullScreen();
+  } else if(element.mozRequestFullScreen) {
+    element.mozRequestFullScreen();
+  } else if(element.webkitRequestFullScreen) {
+    element.webkitRequestFullScreen();
+  }
+}
+</script>
+    
+    
+  </body>
+</html>
